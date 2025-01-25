@@ -89,7 +89,8 @@ DEFAULT_ARGS = {
     "qlora_adapter_name_or_path": os.getenv('QLORA_ADAPTER_NAME_OR_PATH', None),
     "disable_logprobs_during_spec_decoding": os.getenv('DISABLE_LOGPROBS_DURING_SPEC_DECODING', None),
     "otlp_traces_endpoint": os.getenv('OTLP_TRACES_ENDPOINT', None),
-    "use_v2_block_manager": os.getenv('USE_V2_BLOCK_MANAGER', 'true')
+    "use_v2_block_manager": os.getenv('USE_V2_BLOCK_MANAGER', 'true'),
+    "limit_mm_per_prompt": os.getenv('LIMI_MM_PER_PROMPT', 'image=1,video=1')
 }
 
 def match_vllm_args(args):
